@@ -126,7 +126,7 @@ U 1 1 57FADC87
 P 1250 4500
 F 0 "P4" H 1250 4600 50  0000 C CNN
 F 1 "beat in" V 1350 4500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 1250 4500 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1250 4500 50  0001 C CNN
 F 3 "" H 1250 4500 50  0000 C CNN
 	1    1250 4500
 	-1   0    0    1   
@@ -137,7 +137,7 @@ U 1 1 57FADD2C
 P 1200 6550
 F 0 "P3" H 1200 6650 50  0000 C CNN
 F 1 "loop in" V 1300 6550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 1200 6550 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1200 6550 50  0001 C CNN
 F 3 "" H 1200 6550 50  0000 C CNN
 	1    1200 6550
 	-1   0    0    1   
@@ -219,62 +219,6 @@ F 3 "" H 3250 4500 50  0000 L CNN
 	1    3250 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2250 2550 2900 2550
-Wire Wire Line
-	2300 2300 2300 2600
-Wire Wire Line
-	2300 2900 2300 2950
-Wire Wire Line
-	1800 2950 4400 2950
-Wire Wire Line
-	1800 2950 1800 2900
-Wire Wire Line
-	2650 2950 2650 2900
-Connection ~ 2300 2950
-Wire Wire Line
-	2650 2550 2650 2600
-Connection ~ 2300 2550
-Connection ~ 2650 2550
-Wire Wire Line
-	3200 2550 3300 2550
-Wire Wire Line
-	3600 2950 3600 2750
-Connection ~ 2650 2950
-Wire Wire Line
-	1650 2300 2300 2300
-Wire Wire Line
-	3600 2350 4350 2350
-Connection ~ 3600 2950
-Wire Wire Line
-	1800 2550 1800 2600
-Connection ~ 1800 2550
-Wire Wire Line
-	1450 4500 1900 4500
-Wire Wire Line
-	1750 4500 1750 4550
-Connection ~ 1750 4500
-Wire Wire Line
-	2200 4500 2350 4500
-Wire Wire Line
-	2650 4500 3050 4500
-Connection ~ 2850 4500
-Wire Wire Line
-	2850 4900 2850 4800
-Wire Wire Line
-	1750 4900 3350 4900
-Wire Wire Line
-	1750 4900 1750 4850
-Wire Wire Line
-	3350 4900 3350 4700
-Connection ~ 2850 4900
-Wire Wire Line
-	3350 4150 3350 4300
-Wire Wire Line
-	3800 4250 3350 4250
-Connection ~ 3350 4250
-Wire Wire Line
-	3350 3400 3350 3850
 $Comp
 L +5V #PWR02
 U 1 1 57FAE707
@@ -292,13 +236,11 @@ U 1 1 57FAE7F9
 P 4600 4250
 F 0 "P5" H 4600 4350 50  0000 C CNN
 F 1 "beat out" V 4700 4250 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4600 4250 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4600 4250 50  0001 C CNN
 F 3 "" H 4600 4250 50  0000 C CNN
 	1    4600 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 4250 4400 4250
 $Comp
 L GND #PWR03
 U 1 1 57FAE8E5
@@ -359,22 +301,11 @@ F 3 "" H 2750 6550 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
-U 1 1 57FAEF69
-P 2850 6100
-F 0 "R10" V 2930 6100 50  0000 C CNN
-F 1 "1k" V 2850 6100 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 2780 6100 50  0001 C CNN
-F 3 "" H 2850 6100 50  0000 C CNN
-	1    2850 6100
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R9
 U 1 1 57FAEFAE
 P 2850 5650
 F 0 "R9" V 2930 5650 50  0000 C CNN
-F 1 "620R" V 2850 5650 50  0000 C CNN
+F 1 "33k" V 2850 5650 50  0000 C CNN
 F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 2780 5650 50  0001 C CNN
 F 3 "" H 2850 5650 50  0000 C CNN
 	1    2850 5650
@@ -385,7 +316,7 @@ L R R12
 U 1 1 57FAF048
 P 3150 5900
 F 0 "R12" V 3230 5900 50  0000 C CNN
-F 1 "10k" V 3150 5900 50  0000 C CNN
+F 1 "3k3" V 3150 5900 50  0000 C CNN
 F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 3080 5900 50  0001 C CNN
 F 3 "" H 3150 5900 50  0000 C CNN
 	1    3150 5900
@@ -405,12 +336,12 @@ $EndComp
 $Comp
 L R R15
 U 1 1 57FAF16A
-P 3800 6350
-F 0 "R15" V 3880 6350 50  0000 C CNN
-F 1 "620R" V 3800 6350 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 3730 6350 50  0001 C CNN
-F 3 "" H 3800 6350 50  0000 C CNN
-	1    3800 6350
+P 3800 6400
+F 0 "R15" V 3880 6400 50  0000 C CNN
+F 1 "3k3" V 3800 6400 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 3730 6400 50  0001 C CNN
+F 3 "" H 3800 6400 50  0000 C CNN
+	1    3800 6400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -424,56 +355,15 @@ F 3 "" H 3450 5350 50  0000 C CNN
 	1    3450 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 6550 1500 6550
-Wire Wire Line
-	1800 6550 2550 6550
-Wire Wire Line
-	2300 6550 2300 6600
-Connection ~ 2300 6550
-Wire Wire Line
-	1950 6550 1950 6600
-Connection ~ 1950 6550
-Wire Wire Line
-	2850 6350 2850 6250
-Wire Wire Line
-	2850 5800 2850 5950
-Wire Wire Line
-	3000 5900 2850 5900
-Connection ~ 2850 5900
-Wire Wire Line
-	3300 5900 3500 5900
-Wire Wire Line
-	3800 5450 3800 5700
-Wire Wire Line
-	3800 6100 3800 6200
-Wire Wire Line
-	3800 6500 4400 6500
-Wire Wire Line
-	2850 7050 2850 6750
-Wire Wire Line
-	1950 7050 2850 7050
-Wire Wire Line
-	2300 6900 2300 7150
-Wire Wire Line
-	1950 6900 1950 7050
-Connection ~ 2300 7050
-Wire Wire Line
-	2850 5450 3800 5450
-Wire Wire Line
-	2850 5450 2850 5500
-Wire Wire Line
-	3450 5350 3450 5450
-Connection ~ 3450 5450
 $Comp
 L CONN_01X01 P6
 U 1 1 57FB036C
-P 4600 6500
-F 0 "P6" H 4600 6600 50  0000 C CNN
-F 1 "loop out" V 4700 6500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4600 6500 50  0001 C CNN
-F 3 "" H 4600 6500 50  0000 C CNN
-	1    4600 6500
+P 4550 6200
+F 0 "P6" H 4550 6300 50  0000 C CNN
+F 1 "loop out" V 4650 6200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4550 6200 50  0001 C CNN
+F 3 "" H 4550 6200 50  0000 C CNN
+	1    4550 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -495,7 +385,7 @@ U 1 1 57FB082F
 P 1250 3550
 F 0 "P7" H 1250 3650 50  0000 C CNN
 F 1 "5v in" V 1350 3550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 1250 3550 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1250 3550 50  0001 C CNN
 F 3 "" H 1250 3550 50  0000 C CNN
 	1    1250 3550
 	-1   0    0    -1  
@@ -511,11 +401,6 @@ F 3 "" H 1700 3500 50  0000 C CNN
 	1    1700 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 3550 1700 3500
-Connection ~ 1700 3550
-Wire Wire Line
-	1450 3550 1700 3550
 Text Label 2750 2950 0    60   ~ 0
 GND
 Text Label 1600 3550 0    60   ~ 0
@@ -526,7 +411,7 @@ U 1 1 57FDC207
 P 1450 2300
 F 0 "P8" H 1450 2400 50  0000 C CNN
 F 1 "in nofilt" V 1550 2300 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 1450 2300 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1450 2300 50  0001 C CNN
 F 3 "" H 1450 2300 50  0000 C CNN
 	1    1450 2300
 	-1   0    0    -1  
@@ -537,20 +422,18 @@ U 1 1 57FDC29A
 P 1200 2550
 F 0 "P1" H 1200 2650 50  0000 C CNN
 F 1 "in filt" V 1300 2550 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 1200 2550 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1200 2550 50  0001 C CNN
 F 3 "" H 1200 2550 50  0000 C CNN
 	1    1200 2550
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 2550 1950 2550
 $Comp
 L CONN_01X01 P9
 U 1 1 57FDCA15
 P 4600 2950
 F 0 "P9" H 4600 3050 50  0000 C CNN
 F 1 "fsw gnd" V 4700 2950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4600 2950 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4600 2950 50  0001 C CNN
 F 3 "" H 4600 2950 50  0000 C CNN
 	1    4600 2950
 	1    0    0    -1  
@@ -561,7 +444,7 @@ U 1 1 57FDCAA6
 P 4550 2350
 F 0 "P2" H 4550 2450 50  0000 C CNN
 F 1 "fsw +" V 4650 2350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 4550 2350 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4550 2350 50  0001 C CNN
 F 3 "" H 4550 2350 50  0000 C CNN
 	1    4550 2350
 	1    0    0    -1  
@@ -589,6 +472,108 @@ F 3 "" H 4200 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
+	2250 2550 2900 2550
+Wire Wire Line
+	2300 2300 2300 2600
+Wire Wire Line
+	2300 2900 2300 2950
+Wire Wire Line
+	1800 2950 4400 2950
+Wire Wire Line
+	1800 2950 1800 2900
+Wire Wire Line
+	2650 2950 2650 2900
+Connection ~ 2300 2950
+Wire Wire Line
+	2650 2550 2650 2600
+Connection ~ 2300 2550
+Connection ~ 2650 2550
+Wire Wire Line
+	3200 2550 3300 2550
+Wire Wire Line
+	3600 2950 3600 2750
+Connection ~ 2650 2950
+Wire Wire Line
+	1650 2300 2300 2300
+Wire Wire Line
+	3600 2350 4350 2350
+Connection ~ 3600 2950
+Wire Wire Line
+	1800 2550 1800 2600
+Connection ~ 1800 2550
+Wire Wire Line
+	1450 4500 1900 4500
+Wire Wire Line
+	1750 4500 1750 4550
+Connection ~ 1750 4500
+Wire Wire Line
+	2200 4500 2350 4500
+Wire Wire Line
+	2650 4500 3050 4500
+Connection ~ 2850 4500
+Wire Wire Line
+	2850 4900 2850 4800
+Wire Wire Line
+	1750 4900 3350 4900
+Wire Wire Line
+	1750 4900 1750 4850
+Wire Wire Line
+	3350 4900 3350 4700
+Connection ~ 2850 4900
+Wire Wire Line
+	3350 4150 3350 4300
+Wire Wire Line
+	3800 4250 3350 4250
+Connection ~ 3350 4250
+Wire Wire Line
+	3350 3400 3350 3850
+Wire Wire Line
+	4100 4250 4400 4250
+Wire Wire Line
+	1400 6550 1500 6550
+Wire Wire Line
+	1800 6550 2550 6550
+Wire Wire Line
+	2300 6550 2300 6600
+Connection ~ 2300 6550
+Wire Wire Line
+	1950 6550 1950 6600
+Connection ~ 1950 6550
+Wire Wire Line
+	2850 5800 2850 6350
+Wire Wire Line
+	3000 5900 2850 5900
+Connection ~ 2850 5900
+Wire Wire Line
+	3300 5900 3500 5900
+Wire Wire Line
+	3800 5450 3800 5700
+Wire Wire Line
+	3800 6100 3800 6250
+Wire Wire Line
+	2850 7050 2850 6750
+Wire Wire Line
+	1950 7050 3800 7050
+Wire Wire Line
+	2300 6900 2300 7150
+Wire Wire Line
+	1950 6900 1950 7050
+Connection ~ 2300 7050
+Wire Wire Line
+	2850 5450 3800 5450
+Wire Wire Line
+	2850 5450 2850 5500
+Wire Wire Line
+	3450 5350 3450 5450
+Connection ~ 3450 5450
+Wire Wire Line
+	1700 3550 1700 3500
+Connection ~ 1700 3550
+Wire Wire Line
+	1450 3550 1700 3550
+Wire Wire Line
+	1400 2550 1950 2550
+Wire Wire Line
 	4200 2900 4200 2950
 Connection ~ 4200 2950
 Wire Wire Line
@@ -600,4 +585,24 @@ Connection ~ 2450 4900
 Wire Wire Line
 	2450 2950 2450 3150
 Connection ~ 2450 2950
+Wire Wire Line
+	4350 6200 3800 6200
+Connection ~ 3800 6200
+Wire Wire Line
+	3800 7050 3800 6550
+Connection ~ 2850 7050
+$Comp
+L CONN_01X01 P10
+U 1 1 58E01D1C
+P 3250 6250
+F 0 "P10" H 3250 6350 50  0000 C CNN
+F 1 "inv loop out" V 3350 6250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3250 6250 50  0001 C CNN
+F 3 "" H 3250 6250 50  0000 C CNN
+	1    3250 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 6250 2850 6250
+Connection ~ 2850 6250
 $EndSCHEMATC
